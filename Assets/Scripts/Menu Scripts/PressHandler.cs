@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations;
 
 public class PressHandler : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class PressHandler : MonoBehaviour
         {
             mainMenu.gameObject.SetActive(true);
             gameObject.SetActive(false);
+
+            //play animations
         }
     }
 }

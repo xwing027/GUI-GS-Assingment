@@ -68,7 +68,4 @@ public class OptionsManager : MonoBehaviour
     }
     #endregion
 
-    #region Keybinds
-
-    #endregion
 }

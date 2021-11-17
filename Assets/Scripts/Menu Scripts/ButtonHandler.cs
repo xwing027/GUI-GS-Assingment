@@ -9,19 +9,13 @@ public class ButtonHandler : MonoBehaviour
     public GameObject mainMenu;
     public GameObject options;
     public GameObject playMenu;
+    public GameObject pauseMenu;
+    Scene currentScene;
+    int sceneIndex;
 
-    //regions are not strict e.g. exit is used in other places too, this is just for organisation
-    #region Main Menu 
-    public void Play()
+    void Start()
     {
-        playMenu.gameObject.SetActive(true);
-        mainMenu.gameObject.SetActive(false);
-    }
-
-    public void Options()
-    {
-        options.gameObject.SetActive(true);
-        mainMenu.gameObject.SetActive(false);
+        currentScene = SceneManager.GetActiveScene();
     }
 
     public void Exit()
@@ -31,7 +25,6 @@ public class ButtonHandler : MonoBehaviour
         #endif
         Application.Quit();
     }
-    #endregion
 
     #region Play Menu
     public void PlayNew()
@@ -41,12 +34,7 @@ public class ButtonHandler : MonoBehaviour
 
     public void PlayLoad()
     {
-
-    }
-
-    public void PlayCont()
-    {
-
+        SceneManager.LoadScene(2);
     }
     #endregion
 
@@ -55,5 +43,27 @@ public class ButtonHandler : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+    public void Return()
+    {
+        Time.timeScale = 1;
+        pauseMenu.SetActive(false);
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Confined;
+    }
     #endregion
+
+    public void Back()
+    {
+        if (currentScene.buildIndex == 0)
+        {
+            options.gameObject.SetActive(false);
+            mainMenu.gameObject.SetActive(true);
+        }
+        if (currentScene.buildIndex == 2)
+        {
+            options.gameObject.SetActive(false);
+            pauseMenu.gameObject.SetActive(true);
+        }
+    }
 }

@@ -602,7 +602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a97fbc8c3609bc9428e7b3ea7c807190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMenu: {fileID: 0}
+  mainMenu: {fileID: 1687578803}
   options: {fileID: 1336251197}
   playMenu: {fileID: 0}
   pauseMenu: {fileID: 1979204391}

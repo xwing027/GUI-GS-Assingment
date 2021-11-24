@@ -50,6 +50,7 @@ public class ButtonHandler : MonoBehaviour
         pauseMenu.SetActive(false);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Confined;
+        PauseManager.isPaused = false;
     }
     #endregion
 

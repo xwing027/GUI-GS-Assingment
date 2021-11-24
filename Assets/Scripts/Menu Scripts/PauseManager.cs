@@ -5,10 +5,10 @@ using UnityEngine;
 public class PauseManager : MonoBehaviour
 {
     public GameObject pauseMenu;
+    public static bool isPaused;
 
     void Update()
     {
-        
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Paused();
@@ -21,5 +21,6 @@ public class PauseManager : MonoBehaviour
         pauseMenu.SetActive(true);
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
+        isPaused = true;
     }
 }

@@ -21,7 +21,7 @@ public class CustomisationGet : MonoBehaviour
         player.gameObject.name = player.name;
 
         //set the texture for each area in player prefs using the index
-        SetTexture("Skin", PlayerPrefs.GetInt("SkinIndex")); 
+        SetTexture("Skin", PlayerPrefs.GetInt("SkinIndex"));
         SetTexture("Mouth", PlayerPrefs.GetInt("MouthIndex"));
         SetTexture("Eyes", PlayerPrefs.GetInt("EyesIndex"));
         SetTexture("Hair", PlayerPrefs.GetInt("HairIndex"));
@@ -80,8 +80,9 @@ public class CustomisationGet : MonoBehaviour
                 break;
         }
 
-        Material[] mats = character.materials; //put the rendered materials in a list
+        Material[] mats = rend.materials; //put the rendered materials in a list
         mats[materialIndex].mainTexture = texture; //set the texture to the material selected in the list
-        character.materials = mats; //render the material
+        rend.materials = mats; //render the material
+
     }
 }

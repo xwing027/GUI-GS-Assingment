@@ -594,7 +594,7 @@ public class CustomisationSet : Stats
 
         for (int i = 0; i < characterStats.Length; i++) //for the info in character stats
         {
-            PlayerPrefs.SetInt(characterStats[i].name, (characterStats[i].value + characterStats[i].tempValue)); //save the name and values
+            PlayerPrefs.SetInt(characterStats[i].name, (characterStats[i].value + characterStats[i].tempValue + characterStats[i].tempCustomValue)); //save the name and values
         }
     }
 

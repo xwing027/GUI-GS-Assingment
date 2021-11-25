@@ -48,7 +48,7 @@ public class MouseLook : MonoBehaviour
 
     void Update()
     {
-        if (!(PauseManager.isPaused)) //add in or if inventory is not showing
+        if (!(PauseManager.isPaused || Inventory.showInv))
         {
 
             #region Mouse X

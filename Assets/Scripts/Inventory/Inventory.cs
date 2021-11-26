@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
-    #region Variables
+   /* #region Variables
     public static List<Item> inv = new List<Item>(); //handles the inventory
     public static bool showInv;
     public Item selectedItem;
@@ -154,5 +154,5 @@ public class Inventory : MonoBehaviour
     public void EquipButton()
     {
 
-    }
+    }*/
 }

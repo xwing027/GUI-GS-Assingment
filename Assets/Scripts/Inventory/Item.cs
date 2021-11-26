@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
 public class Item
 {
     #region Variables
@@ -96,4 +96,4 @@ public enum ItemTypes
     Craftable,
     Misc,
     Money,
-}
+}*/

@@ -7,9 +7,9 @@ public abstract class PickupItem : MonoBehaviour
 {
     public ItemData data = new ItemData();
 
-    public virtual void PickedUp() //this will run when close to an object
+    public virtual void PickedUp() //this runs after having picked up an item, and now it needs to go somewhere
     {
-        int slot; //determines which slot in the array/inventory it can go into, as only 10 are available
+        int slot; //determines which slot in the array/inventory it can go into, as only 20 are available
         if (data.isStackable) //if the item can be stacked
         {
             Debug.Log("stackable item contacted. Searching for available slot");
@@ -49,6 +49,4 @@ public abstract class PickupItem : MonoBehaviour
             Debug.Log("No valid slot was found");
         }
     }
-
-
 }

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ClickableObject : MonoBehaviour//, IPointerClickHandler
+public class ClickableObject : MonoBehaviour, IPointerClickHandler
 {
-    /*public delegate void LeftClick();
+    public delegate void LeftClick();
     public delegate void MiddleClick();
     public delegate void RightClick();
 
@@ -38,6 +38,6 @@ public class ClickableObject : MonoBehaviour//, IPointerClickHandler
                 Debug.Log("Right click");
                 rightClick();
             }
-        }*/
-}
+        }
+    }
 }

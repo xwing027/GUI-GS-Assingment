@@ -118,3 +118,5 @@ MonoBehaviour:
     value: 0
     slot: 0
     itemType: Armour
+    healthBonus: 0
+    description: A sturdy iron helmet

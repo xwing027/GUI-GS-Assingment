@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5743294538390708877}
   m_Layer: 6
   m_Name: Meat
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,9 +115,11 @@ MonoBehaviour:
     count: 1
     icon: {fileID: 21300000, guid: 1d4673284f41d84428f779c419ededf2, type: 3}
     droppedObj: {fileID: 0}
-    value: 0
+    value: 3
     slot: 0
     itemType: Food
+    itemBonus: 4
+    description: A piece of meat
 --- !u!54 &5743294538390708877
 Rigidbody:
   m_ObjectHideFlags: 0

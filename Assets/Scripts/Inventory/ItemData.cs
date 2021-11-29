@@ -11,11 +11,8 @@ public class ItemData
     public int value; //cost for buying and selling
     public int slot; //inventory slot?
     public string itemType;
-
-    public void Use()
-    {
-        
-    }
+    public int itemBonus;
+    public string description;
 
     public void Drop()
     {
@@ -27,5 +24,6 @@ public class ItemData
         GameObject droppedItem = GameObject.Instantiate(Resources.Load("PickupItems/" + itemName) as GameObject, PlayerPickup.dropLoc, Quaternion.identity);
         droppedItem.GetComponent<PickupItem>().data = this;
         InventoryManager.invMan.ClearSlot(slot);
+        InventoryManager.invMan.HideDescription();
     }
 }

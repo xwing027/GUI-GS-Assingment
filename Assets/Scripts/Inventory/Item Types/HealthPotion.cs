@@ -5,4 +5,5 @@ using UnityEngine;
 public class HealthPotion : Consumable
 {
     
+    public int healthTimer;
 }

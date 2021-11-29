@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -3823763083628545152}
   m_Layer: 6
   m_Name: Apple
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,9 +115,11 @@ MonoBehaviour:
     count: 1
     icon: {fileID: 21300000, guid: 5b90ef396822a8740a440f1c01fbada3, type: 3}
     droppedObj: {fileID: 0}
-    value: 0
+    value: 1
     slot: 0
     itemType: Food
+    itemBonus: 5
+    description: A delicious apple
 --- !u!54 &-3823763083628545152
 Rigidbody:
   m_ObjectHideFlags: 0
